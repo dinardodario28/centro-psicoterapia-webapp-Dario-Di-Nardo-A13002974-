@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+:root {
+    --primary-color: #0263FF; 
+    --secondary-color: #F0F4F8; 
+    --text-dark: #333333;
+    --text-light: #777777;
+    --white: #FFFFFF;
+    --border: #E1E8ED;
+    --success: #10B981;
+    --danger: #EF4444; 
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--secondary-color);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+
+header {
+    background-color: var(--white);
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+header h1 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav span {
+    font-weight: 600;
+    color: var(--text-light);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--primary-color);
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #004ecc;
+}
+
+
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    color: var(--text-dark);
+    margin-bottom: 20px;
+    font-weight: 600;
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+    color: var(--text-light);
+}
+
+
+form {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    max-width: 500px;
+    margin: 0 auto; 
+}
+
+
+main section form {
+    max-width: 100%;
+    box-shadow: none;
+    padding: 15px;
+    border: 1px solid var(--border);
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--text-dark);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="time"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3
